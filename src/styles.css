@@ -87,7 +87,7 @@ a {
 ====================*/
  
 header {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #bfbfbf;
 }
 
 header > div {
@@ -265,6 +265,7 @@ section.recommended > div {
 ====================*/
 
 footer {
+  padding: 2rem 0;
   background-color: #f5f5f5;
 }
 
@@ -275,4 +276,186 @@ footer > div {
 
 footer > div > div {
   display: flex;
+}
+
+footer > div > p {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+footer form {
+  margin-bottom: 1rem;
+}
+
+footer form label {
+  margin-right: 1rem;
+  color: rgba(0,0,0,.7);
+}
+
+footer form input {
+  width: 300px;
+  margin-right: 1rem;
+  border: none;
+  border-bottom: 2px solid var(--black);
+  font-size: .8rem;
+  background-color: transparent;
+}
+
+footer form button {
+  padding: .3rem 5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: .85rem;
+  font-weight: bold;
+  background-color: #005587;
+  color: var(--white);
+  cursor: pointer;
+}
+
+footer form button:hover {
+  transition: background-color 350ms;
+  background-color: #193c5b;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: .7rem;
+}
+
+footer ul li {
+  padding: .2rem .7rem;
+  border-right: 1px solid var(--black);
+}
+
+footer ul a:hover {
+  color: var(--sky-blue);
+}
+
+footer ul:first-of-type {
+  border-bottom: 1px solid #bfbfbf;
+}
+
+footer ul:nth-of-type(2) {
+  margin-top: .7rem;
+}
+
+.cookie-settings-btn {
+  display: block;
+  margin: 0 auto;
+  padding: .3rem .5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: .85rem;
+  font-weight: bold;
+  background-color: #005587;
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+
+.cookie-settings-btn:hover {
+  background-color: #288eb7;
+}
+
+.app-socials-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.3rem;
+}
+
+.app-wrapper {
+  margin-right: 2rem;
+}
+
+.app-wrapper p,
+.social-media-wrapper p {
+  margin-bottom: .9rem;
+}
+
+.app-wrapper button {
+  height: 2.1rem;
+  width: 6.2rem;
+  border: none;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#ios-app-btn {
+  margin-right: 1rem;
+  background-image: url('./images/app-store.svg');
+}
+
+#android-app-btn {
+  background-image: url('./images/play-store.svg');
+}
+
+.social-media-wrapper a {
+  position: relative;
+  display: inline-block;
+  height: 26px;
+  width: 26px;
+  margin-right: 1rem;
+  padding: 5px;
+  border-radius: 50%;
+  color: var(--white);
+}
+
+.social-media-wrapper a:last-of-type {
+  margin-right: 0;
+}
+
+.social-media-wrapper a:hover {
+  opacity: .7;
+}
+
+.social-media-wrapper i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.pinterest {
+  background-color: #cb2027;
+}
+
+.footer-additional {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: .4rem;
+}
+
+.footer-additional small {
+  font-size: .9rem;
+}
+
+.back-to-top {
+  display: flex;
+  align-items: center;
+}
+
+.back-to-top a:first-of-type {
+  margin-right: 1.5rem;
+  font-weight: bold;
+}
+
+.back-to-top a:last-of-type {
+  font-size: 2.3rem;
 }

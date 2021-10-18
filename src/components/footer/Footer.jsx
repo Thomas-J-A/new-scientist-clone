@@ -4,7 +4,7 @@ const Footer = () => (
   <footer>
     <div>
       <p>Sign up to our newsletters</p>
-      
+
       <form>
         <label for="input-email">
           Enter your email address to get started
@@ -70,28 +70,42 @@ const Footer = () => (
         </li>
       </ul>
 
-      <button type="button">COOKIE SETTINGS</button>
+      <button className="cookie-settings-btn" type="button">MANAGE PREFERENCES</button>
 
-      <div>
-        <div>
+      <div className="app-socials-wrapper">
+        <div className="app-wrapper">
           <p>GET THE APP</p>
-          <button type="button">Download on the App Store</button>
-          <button type="button">Get it on Google Play</button>
+          <button id="ios-app-btn" type="button" />
+          <button id="android-app-btn" type="button" />
         </div>
-        <div>
+        <div className="social-media-wrapper">
           <p>FOLLOW US</p>
-          <i className="fab fa-facebook-f" />
-          <i className="fab fa-twitter" />
-          <i className="fab fa-linkedin-in" />
-          <i className="fab fa-pinterest-p" />
+            <div>
+              <a className="social-btn facebook" href="#">
+                <i className="fab fa-facebook-f" />
+              </a>
+              <a className="social-btn twitter" href="#">
+                <i className="fab fa-twitter" />
+              </a>
+              <a className="social-btn linkedin" href="#">
+              <i className="fab fa-linkedin-in" />
+              </a>
+              <a className="social-btn pinterest" href="#">
+                <i className="fab fa-pinterest-p" />
+              </a>
+            </div>
         </div>
       </div>
     </div>
 
-    <div>
-      <small>&copy;Copyright New Scientist Ltd.</small>
-      <a href="#">Back to top</a>
-      <i className="far fa-arrow-alt-circle-up" />
+    <div className="footer-additional">
+      <small>&copy; Copyright New Scientist Ltd.</small>
+      <div className="back-to-top">
+        <a href="#">Back to top</a>
+        <a href="#">
+          <i className="far fa-arrow-alt-circle-up" />
+        </a>
+      </div>
     </div>
   </footer>
 );
